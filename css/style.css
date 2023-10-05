@@ -15,6 +15,14 @@
     --dark: #1a1a1a;
     --white: #ffffff;
 }
+
+a{
+    color: var(--white);
+}
+
+header{
+    font-weight: bold;
+}
 /* #endregion common */
 
 /* #region utility */
@@ -42,6 +50,10 @@
 .align-center{
     align-items: center;
 }
+
+.mr-1{
+    margin-right: 0.5rem;
+}
 /* #endregion utility */
 
 /* #region header*/
@@ -49,6 +61,19 @@
     background: var(--primary);
     color: var(--white);
 }
+
+.logo{
+    height: 30px;
+}
+
+.links li a{
+    padding-right: 0.5rem;
+}
+
+.icons li a{
+    padding-left: 0.5rem;
+}
+
 /* #endregion header*/
 
 /* #region main*/
@@ -58,12 +83,12 @@
 }
 /* #endregion main*/
 
-/* #region header*/
+/* #region footer*/
 #footer{
     background: var(--dark);
     color: var(--white);
 }
-/* #endregion header*/
+/* #endregion footer*/
 
 /* #region debug */
 .debug #header{
