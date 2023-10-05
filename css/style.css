@@ -22,6 +22,14 @@
     margin: auto;
 }
 
+.row{
+    display: flex;
+}
+
+.col-4{
+    width: calc((100% /  12) * 4);
+}
+
 .d-flex{
     display: flex;
 }
@@ -31,11 +39,19 @@
 }
 /* #endregion utility */
 
-/* #region */
+/* #region header*/
 #header{
     background: var(--primary);
     color: var(--white);
 }
+/* #endregion header*/
+
+/* #region main*/
+.cards{
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+/* #endregion main*/
 
 /* #region debug */
 .debug #header{
@@ -44,5 +60,23 @@
 
 .debug #header .container{
     border: 1px solid red;
+}
+
+.debug #main .row{
+    background: lightgray;
+}
+
+.debug #main .row .card{
+    background: lightyellow;
+}
+
+.debug #main .row .card .image{
+    height: 645px;
+    background: lightyellow;
+}
+
+.debug #main .row .card .text{
+    height: 60px;
+    background: yellow;
 }
 /* #endregion debug */
