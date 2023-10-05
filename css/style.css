@@ -169,6 +169,21 @@ header{
 #footer{
     background: var(--dark);
     color: var(--white);
+    padding: 2rem 0;
+}
+
+#footer .row{
+    padding-bottom: 0.5rem;
+}
+
+.privacy a{
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+}
+
+.socials a{
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
 }
 /* #endregion footer*/
 
