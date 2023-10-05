@@ -10,7 +10,7 @@
 
 :root{
     --primary: #ff6900;
-    --tag-discont: #ff0000;
+    --tag-discount: #ff0000;
     --tag-sustainability: #008000;
     --dark: #1a1a1a;
     --white: #ffffff;
@@ -43,8 +43,12 @@ header{
     display: flex;
 }
 
-.just-cont-space{
+.justify-space{
     justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
 }
 
 .align-center{
@@ -54,12 +58,24 @@ header{
 .mr-1{
     margin-right: 0.5rem;
 }
+
+.bold{
+    font-weight: bold;
+}
+
+.white{
+    color: var(--white);
+}
 /* #endregion utility */
 
 /* #region header*/
 #header{
     background: var(--primary);
     color: var(--white);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo{
@@ -77,9 +93,75 @@ header{
 /* #endregion header*/
 
 /* #region main*/
+#main{
+    padding-top: 8rem;
+}
+
 .cards{
     gap: 1rem;
     margin-bottom: 3rem;
+}
+
+.image{
+    position: relative;
+    z-index: 0;
+}
+
+.image img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.heart{
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    background: var(--white);
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.tags{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+
+.tags div{
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.discount{
+    background: var(--tag-discount);
+}
+
+.sustainability{
+    background: var(--tag-sustainability);   
+}
+
+.brand{
+    font-size: 0.8rem;
+}
+
+.description{
+    font-size: 1rem;
+}
+
+.price{
+    font-size: 0.8rem;
+}
+
+.new-price{
+    color: var(--tag-discount);
+    margin-right: 0.5rem;
+}
+
+.old-price{
+    text-decoration: line-through;
 }
 /* #endregion main*/
 
