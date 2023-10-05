@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
@@ -37,6 +38,10 @@
 .just-cont-space{
     justify-content: space-between;
 }
+
+.align-center{
+    align-items: center;
+}
 /* #endregion utility */
 
 /* #region header*/
@@ -53,6 +58,13 @@
 }
 /* #endregion main*/
 
+/* #region header*/
+#footer{
+    background: var(--dark);
+    color: var(--white);
+}
+/* #endregion header*/
+
 /* #region debug */
 .debug #header{
     height: 80px;
@@ -60,6 +72,7 @@
 
 .debug #header .container{
     border: 1px solid red;
+    height: 100%;
 }
 
 .debug #main .row{
@@ -78,5 +91,14 @@
 .debug #main .row .card .text{
     height: 60px;
     background: yellow;
+}
+
+.debug #footer{
+    height: 110px;
+}
+
+.debug #footer .container{
+    border: 1px solid red;
+    height: 100%;
 }
 /* #endregion debug */
