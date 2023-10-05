@@ -1,0 +1,48 @@
+/* #region common */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --primary: #ff6900;
+    --tag-discont: #ff0000;
+    --tag-sustainability: #008000;
+    --dark: #1a1a1a;
+    --white: #ffffff;
+}
+/* #endregion common */
+
+/* #region utility */
+.container{
+    width: 72%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.just-cont-space{
+    justify-content: space-between;
+}
+/* #endregion utility */
+
+/* #region */
+#header{
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* #region debug */
+.debug #header{
+    height: 80px;
+}
+
+.debug #header .container{
+    border: 1px solid red;
+}
+/* #endregion debug */
