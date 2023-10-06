@@ -43,6 +43,10 @@ header{
     display: flex;
 }
 
+.d-none{
+    display: none;
+}
+
 .justify-space{
     justify-content: space-between;
 }
@@ -112,6 +116,19 @@ header{
     object-fit: cover;
     object-position: center;
     z-index: -1;
+}
+
+.image-b{
+    display: none;
+}
+
+.image:hover{
+    & .image-a{
+        display: none;
+    }
+    & .image-b{
+        display: inline-block;
+    }
 }
 
 .heart{
