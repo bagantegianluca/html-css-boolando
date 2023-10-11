@@ -33,10 +33,11 @@ header{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col-4{
-    width: calc((100% /  12) * 4);
+    width: calc(((100% - 2rem) /  12) * 4);
 }
 
 .d-flex{
@@ -112,10 +113,14 @@ header{
 }
 
 .image img{
-    width: 100%;
+    max-width: 100%;
     object-fit: cover;
     object-position: center;
     z-index: -1;
+}
+
+.image-a{
+    display: block;
 }
 
 .image-b{
@@ -127,7 +132,7 @@ header{
         display: none;
     }
     & .image-b{
-        display: inline-block;
+        display: block;
     }
 }
 
@@ -139,6 +144,10 @@ header{
     right: 0;
     top: 10px;
     color: var(--dark);
+}
+
+.heart:hover{
+    color: var(--tag-discount);
 }
 
 .tags{
@@ -159,6 +168,10 @@ header{
 
 .sustainability{
     background: var(--tag-sustainability);   
+}
+
+.text{
+    padding: 0.25rem 0;
 }
 
 .brand{
